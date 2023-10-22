@@ -1,0 +1,140 @@
+h1 {
+    color: purple;
+    text-align: center;
+    font-style: italic;
+    font-size: 50px;
+}
+
+.menuCaja {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.menu1, .menu2, .menu3, .menu4 {
+
+    padding: 5px;
+    border: 2px solid rgb(86, 25, 25);
+    margin: 10px;
+    font-weight: bold;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+body {
+    background-color: rgb(86, 25, 25);
+}
+
+.section-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    border: 5px solid black;
+}
+.section-2 img {
+    width: 300px;
+}
+.catVino, .catEspumante, .catAperitivo {
+    text-align: center;
+    font-size: 200%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+    border: 40px solid rgb(86, 25, 25);
+    margin: 10px;
+   
+}
+
+
+
+.section-4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.section-4 img {
+    width: 200px;
+}
+.prod {
+    padding: 10px;
+    border: 3px solid rgb(86, 25, 25);
+    margin: 10px;
+}
+
+.section-5 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin: 70px;
+    
+}
+.section-5 img {
+    width: 80px;
+}
+.envio, .cuotas, .sitioWeb {
+    font-size: 150%;
+    font-family: cursive;
+    text-align: center;
+
+    padding: 10px;
+    border: 3px solid gray;
+    margin: 7px;
+}
+
+.section-6 {
+    display: flex;
+    
+    padding: 5px;
+    border: 3px solid black;
+    margin: 10px;
+}
+.imgNoticia, .artiNoticia {
+    margin: 20px;
+    font-size: 200%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.artiNoticia {
+    overflow: hidden;
+    text-align: justify;
+}
+
+.section-7 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 15px;
+}
+.form {
+    margin: 30px;
+    
+}
+
+.section-8 {
+    display: grid;
+    grid-template-columns: 25% auto 25%;
+}
+.section-8 img {
+    width: 40px;
+}
+.cajaWhatsapp, .cajaFacebook, .cajaInstagram {
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+    font-size: 150%;
+}
+.telefono, .mail, .ubicacion {
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+    font-size: 150%;
+    font-style: italic;
+    color: blue;
+}
+
+h2 {
+    text-align: center;
+    font-family: fantasy;
+    font-size: 40px;
+}
