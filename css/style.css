@@ -1,3 +1,11 @@
+body {
+    background-color: rgb(86, 25, 25);
+}
+#banner {
+    width: 600px;
+    
+}
+
 h1 {
     color: purple;
     text-align: center;
@@ -21,9 +29,7 @@ h1 {
     font-size: 20px;
 }
 
-body {
-    background-color: rgb(86, 25, 25);
-}
+
 
 .section-2 {
     display: flex;
@@ -45,7 +51,9 @@ body {
    
 }
 
-
+.section-3 {
+    width: 300px;
+}
 
 .section-4 {
     display: flex;
@@ -63,13 +71,13 @@ body {
 
 .section-5 {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin: 70px;
     
 }
 .section-5 img {
-    width: 80px;
+    width: 150px;
 }
 .envio, .cuotas, .sitioWeb {
     font-size: 150%;
@@ -87,6 +95,9 @@ body {
     padding: 5px;
     border: 3px solid black;
     margin: 10px;
+}
+.section-6 img {
+    width: 230px;
 }
 .imgNoticia, .artiNoticia {
     margin: 20px;
@@ -137,4 +148,16 @@ h2 {
     text-align: center;
     font-family: fantasy;
     font-size: 40px;
+}
+
+@media (min-width: 480px) {
+    #banner {
+        width: 790px;
+    }
+}
+
+@media (min-width: 768px) {
+    #banner {
+        width: 1500px;
+    }
 }
