@@ -1,8 +1,11 @@
 body {
-    background-color: rgb(86, 25, 25);
+    background-color: aliceblue ;
 }
+
 #banner {
-    width: 600px;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
     
 }
 
@@ -10,138 +13,7 @@ h1 {
     color: purple;
     text-align: center;
     font-style: italic;
-    font-size: 50px;
-}
-
-.menuCaja {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.menu1, .menu2, .menu3, .menu4 {
-
-    padding: 5px;
-    border: 2px solid rgb(86, 25, 25);
-    margin: 10px;
-    font-weight: bold;
-    list-style-type: none;
-    font-size: 20px;
-}
-
-
-
-.section-2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-
-    border: 5px solid black;
-}
-.section-2 img {
-    width: 300px;
-}
-.catVino, .catEspumante, .catAperitivo {
-    text-align: center;
-    font-size: 200%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 10px;
-    border: 40px solid rgb(86, 25, 25);
-    margin: 10px;
-   
-}
-
-.section-3 {
-    width: 300px;
-}
-
-.section-4 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-.section-4 img {
-    width: 200px;
-}
-.prod {
-    padding: 10px;
-    border: 3px solid rgb(86, 25, 25);
-    margin: 10px;
-}
-
-.section-5 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 70px;
-    
-}
-.section-5 img {
-    width: 150px;
-}
-.envio, .cuotas, .sitioWeb {
-    font-size: 150%;
-    font-family: cursive;
-    text-align: center;
-
-    padding: 10px;
-    border: 3px solid gray;
-    margin: 7px;
-}
-
-.section-6 {
-    display: flex;
-    
-    padding: 5px;
-    border: 3px solid black;
-    margin: 10px;
-}
-.section-6 img {
-    width: 230px;
-}
-.imgNoticia, .artiNoticia {
-    margin: 20px;
-    font-size: 200%;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-.artiNoticia {
-    overflow: hidden;
-    text-align: justify;
-}
-
-.section-7 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 15px;
-}
-.form {
-    margin: 30px;
-    
-}
-
-.section-8 {
-    display: grid;
-    grid-template-columns: 25% auto 25%;
-}
-.section-8 img {
-    width: 40px;
-}
-.cajaWhatsapp, .cajaFacebook, .cajaInstagram {
-    padding: 5px;
-    margin: 10px;
-    text-align: center;
-    font-size: 150%;
-}
-.telefono, .mail, .ubicacion {
-    padding: 5px;
-    margin: 10px;
-    text-align: center;
-    font-size: 150%;
-    font-style: italic;
-    color: blue;
+    font-size: 50px;    
 }
 
 h2 {
@@ -150,14 +22,504 @@ h2 {
     font-size: 40px;
 }
 
+#subTitulo {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 40px;
+    color: rgba(37, 14, 181, 0.886);
+}
+
+.menuCaja {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none; 
+}
+
+.menu{
+
+    background-color: rgb(233, 155, 210);
+    padding: 5px;
+    border: 2px solid rgb(86, 25, 25);
+    margin: 10px;
+    font-weight: bold;
+    list-style-type: none;
+    font-size: 20px;
+
+    transition-duration: .2s;
+    transition-property: all;
+    transition-timing-function: ease-in;
+}
+.menu:hover {
+    box-shadow: 0px 0px 10px 0 black;
+    transform: scale(1.2);
+
+}
+
+#menuSpan a{
+    color: rgb(184, 19, 19);
+    text-decoration: none;
+}
+
+.cajaBanner {
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cajaCategoria {
+    width: 100vw;
+    height: 100px;
+    margin-top: 30px;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.section-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+    border: 1px solid black;
+    
+}
+.section-2 img {
+    width: 200px;
+}
+.catVino, .catEspumante, .catAperitivo {
+    text-align: center;
+    font-size: 200%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 50px;
+    padding: 10px;
+    border: 0px solid none;
+    
+   
+}
+
+.cat {
+    transition: .5s;
+    transition-property: all;
+
+}
+
+.cat:hover {
+    background-color: rgb(72, 79, 156);
+    color: rgb(229, 10, 10);
+}
+
+.carousel {
+    margin-top: 50px;
+}
+
+
+.cajaProductos {
+    width: 100vw;
+    height: 100px;
+    margin-top: 30px;
+    text-align: center;
+    justify-content: center;
+}
+.section-4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.section-4 img {
+    width: 200px;
+}
+.prod {
+    padding: 0px;
+    border: 3px solid rgb(16, 17, 16);
+    margin: 10px;
+}
+
+.p5, .p6, .p7, .p8, .p9, .p10, .p11, .p12 {
+    display: none;
+}
+
+.botonMas {
+    width: 100wv;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.botonMas a {
+    text-decoration: none;
+}
+
+.botonMas p {
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+    border-radius: 5px;
+    border: 3px solid black;
+    margin-top: 10px;
+    transition: .3;
+    transition-property: all;
+    
+}
+.botonMas p:hover{
+    background-color: #3f89b4;
+    color: white;
+    transform: scale(1.3);
+}
+
+
+
+.section-5 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100vw;
+    
+}
+.section-5 img {
+    width: 50px;
+}
+.box5 {
+    height: 200px;
+    width: 95px;
+    font-family: cursive;
+    text-align: center;
+    
+    padding: 10px;
+    border: 3px solid gray;
+    margin: 7px;
+    
+}
+
+.box5:hover {
+    box-shadow: 10px -5px 45px 22px rgba(0,0,0,0.66);
+}
+
+.cajaNoticias {
+    width: 100vw;
+    height: 100px;
+    margin-top: 30px;
+    text-align: center;
+    justify-content: center;
+}
+.section-6 {
+    display: grid;
+    padding: 5px;
+    border: 3px solid black;
+    margin: 10px;
+
+}
+.section-6 img {
+    width: 100%;
+}
+.imgNoticia, .artiNoticia {
+    margin: 20px;
+    font-size: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.artiNoticia article{
+    text-align: justify;
+    overflow: hidden;
+
+}
+
+.botonNoticia {
+    font-size: 70%;
+    color: blue;
+
+}
+
+.cajaFormulario {
+    width: 100vw;
+    height: 100px;
+    margin-top: 30px;
+    text-align: center;
+    justify-content: center;
+}
+
+.section-7 {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form input {
+    margin: 10px;
+    border-radius: 20px;
+    border: 1px solid #5f5c5c41;
+    padding: 15px;
+    width: 250px;
+    height: 50px;
+}
+
+.form textarea {
+    margin: 10px;
+    padding: 15px;
+    border-radius: 20px;
+    border: 1px solid #5f5c5c41;
+    width: 250px;
+    height: 150px;
+}
+.form .inputBoton {
+    margin: 10px;
+    width: 120px;
+    border: 1px solid black;
+    background-color: #3f89b4;
+    color: white;
+    transition-duration: .2s;
+    transition-property: all;
+    transition-timing-function: ease-in;
+}
+
+.form .inputBoton:hover {
+    color: yellow;
+    background-color: #ea6f0a;
+    box-shadow: 1px -1px 30px 9px rgba(255,0,0,0.69);
+    transform: scale(1.2);
+}
+.section-8 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100vw;
+    height: 100px;
+}
+
+.box8 {
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+    align-items: center;
+    color: blue;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    
+}
+
+
+
+
+#arriba{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 1px solid #d4bfff;
+	background-color:  #ea6f0a;
+	position: fixed;
+	left: 85%;
+	bottom: 60px;
+	cursor: pointer;
+	transition: all .3s ease;
+	transform: scale(0);
+}
+#arriba:hover{
+	opacity: .70;
+	transform: scale(1.1);
+}
+.bi-arrow-up{
+	font-size: 20px;
+}
+
+/*----------------RESPONSIVE*/
 @media (min-width: 480px) {
-    #banner {
-        width: 790px;
+    .box5 {
+        height: 130px;
+        width: 200px;
+        font-family: cursive;
+        text-align: center;
+        
+        
+    }
+    .section-6 {
+        grid-template-columns: 55% auto;
+    }
+    #arriba{
+        left: 90%;
     }
 }
 
+
 @media (min-width: 768px) {
-    #banner {
-        width: 1500px;
+    .p5, .p6 {
+        display: block;
     }
+    #arriba {
+        left: 93%;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .p5, .p6, .p8, .p9, .p10, .p12 {
+        display: block;
+    }
+}
+
+/*
+@media (min-width: 1200px) {
+    
+}
+*/
+
+
+
+/* --------------Para pagina Vinos */
+h3 {
+    font-size: 200%;
+    font-family: cursive;
+    font-style: italic;
+    color: #d82906;
+    text-decoration: underline;
+}
+
+.parrafo {
+    font-size: 150%;
+}
+.secCabernet {
+    display: grid;
+    grid-template-columns: 60% auto;
+    width: 100vw;
+    height: 300px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.secCabernet div img {
+    width: 300px;
+}
+
+.secMalbec {
+    display: grid;
+    grid-template-columns: auto 60%;
+    width: 100vw;
+    height: 300px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center
+}
+.secMalbec div img {
+    width: 300px;
+}
+
+.secSauvignon { 
+    display: grid;
+    grid-template-columns: auto 60%;
+    width: 100vw;
+    height: 400px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center
+    
+}
+
+.secSauvignon div img {
+    width: 150px;
+}
+
+.secRosado {
+    display: grid;
+    grid-template-columns: 30% auto 30%;
+    width: 100vw;
+    height: 500px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center
+}
+
+.secRosado div img {
+     width: 150px;
+}
+
+/*---------------- Pagina de Espumante*/
+.cajaEspumanteB {
+    height: 450px;
+}
+.secEspumante1 {
+    display: grid;
+    grid-template-columns: 60% auto;
+    width: 100vw;
+    height: 300px;
+    margin: 20px;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.secEspumante1 div img {
+    width: 150px;
+}
+
+.secEspumante2 {
+    display: grid;
+    grid-template-columns: auto 60%;
+    width: 100vw;
+    height: 400px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center
+}
+
+.secEspumante2 div img {
+    width: 150px;
+}
+
+/*-------------------------Pagina de Aperitivos*/
+.secFernet {
+    display: grid;
+    grid-template-columns: 60% auto;
+    width: 100vw;
+    height: 300px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.secFernet div img{
+    width: 150px;
+
+}
+
+.secCynar {
+    display: grid;
+    grid-template-columns: auto 60%;
+    width: 100vw;
+    height: 600px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center
 }

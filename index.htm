@@ -1,13 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> <!--Es para usar iconos de boostrap -->
     <link rel="stylesheet" href="css/style.css">
     
-    <title>Sprint 2</title>
+    <title>Sprint 3</title>
+    <link rel="icon" href="images/icono-removebg-preview.ico">
 
-    <nav></nav>
+    
+    <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">LA BARRICA OULALA</a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav> -->
+      <nav>
+        
+      </nav>
 </head>
 
 <body>
@@ -15,17 +46,17 @@
         <h1 class="nombre">LA BARRICA OULALA</h1>
 
         <section class="menuCaja">
-            <div class="menu1">
-                <span><a href="#productos">Productos</a></span>
+            <div class="menu">
+                <span id="menuSpan"><a href="#productos">Productos</a></span>
             </div>
-            <div class="menu2">
-                <span><a href="#categorias">Categorias</a></span>
+            <div class="menu">
+                <span id="menuSpan"><a href="#categorias">Categorias</a></span>
             </div>
-            <div class="menu3">
-                <span><a href="#noticias">Noticias</a></span>
+            <div class="menu">
+                <span id="menuSpan"><a href="#noticias">Noticias</a></span>
             </div>
-            <div class="menu4">
-                <span><a href="#formulario">Formulario</a></span>
+            <div class="menu">
+                <span id="menuSpan"><a href="#formulario">Formulario</a></span>
             </div>
         </section>
         
@@ -33,25 +64,29 @@
 
     <main>
         <section class="section-1">
-            <img id="banner" src="images/BannerVino.png" alt="bannerVino" width="100%" height="500px">
+            <div class="cajaBanner">
+                <img id="banner" src="images/BannerVino.png" alt="bannerVino" >
+            </div>
             
         </section>
         
-        <h2 id="categorias">CATEGORIAS</h2>
+        <div class="cajaCategoria">
+            <h2 id="categorias">CATEGORIAS</h2>
+        </div>
+        
         <section class="section-2">
-            
-            <div class="catVino">
-                <img src="images/Vinos.png" alt="vinos">
+            <div class="cat catVino">
+                <a href="pages/vinos.html"><img src="images/Vinos.png" alt="vinos"></a>
                 <br>
                 <span>Vinos</span>
             </div>
-            <div class="catEspumante">
-                <img src="images/Espumantes.png" alt="espumantes">
+            <div class="cat catEspumante">
+                <a href="pages/espumantes.html"><img src="images/Espumantes.png" alt="espumantes"></a>
                 <br>
                 <span>Espumantes</span>
             </div>
-            <div class="catAperitivo">
-                <img src="images/Aperitivos.png" alt="aperitivos">
+            <div class="cat catAperitivo">
+                <a href="pages/aperitivos.html"><img src="images/Aperitivos.png" alt="aperitivos"></a>
                 <br>
                 <span>Aperitivos</span>
             </div>
@@ -59,139 +94,168 @@
         </section>
         
         <section class="section-3">
-            <!-- Aqui pondria una tira de los productos para comprar   -->
-            
+            <!-- Aqui pondria un carrusel   -->
+            <div id="carouselExampleAutoplaying" class="carousel slide container-md"  data-bs-ride="carousel"     >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <center><img src="images/VinoTienda9.png" class="d-block w-40" alt=""></center>
+                  </div>
+                  <div class="carousel-item">
+                    <center><img src="images/VinoTienda10.png" class="d-block w-40" alt=""></center>
+                  </div>
+                  <div class="carousel-item">
+                    <center><img src="images/VinoTienda4.png" class="d-block w-40" alt=""></center>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </section>
-     
-        <h2 id="productos">PRODUCTOS</h2>
+        
+        <div class="cajaProductos">
+            <h2 id="productos">PRODUCTOS</h2>
+        </div>
+        
         <section class="section-4">
             <div class="prod p1">
-                <img src="images/VinoTienda1.png" alt="vinoCarton" >
+                <img src="images/VinoTienda1-removebg-preview.png" alt="vinoCarton" >
             </div>
             <div class="prod p2">
-                <img src="images/VinoTienda2.png" alt="vinoBotella1" >
+                <img src="images/VinoTienda2-removebg-preview.png" alt="vinoBotella1" >
             </div>
             <div class="prod p3">
-                <img src="images/Vinotienda3.png" alt="vinoBotella2" >
+                <img src="images/Vinotienda3-removebg-preview.png" alt="vinoBotella2" >
             </div>
             <div class="prod p4">
-                <img src="images/VinoTienda4.png" alt="vinoBotella3">
+                <img src="images/VinoTienda4-removebg-preview.png" alt="vinoBotella3">
             </div>
             <div class="prod p5">
-                <img src="images/VinoTienda5.png" alt="vinoBotella4">
+                <img src="images/VinoTienda5-removebg-preview.png" alt="vinoBotella4">
             </div>
             <div class="prod p6">
-                <img src="images/VinoTienda6.png" alt="vinoBotella5">
+                <img src="images/VinoTienda6-removebg-preview.png" alt="vinoBotella5">
             </div>
             <div class="prod p7">
-                <img src="images/VinoTienda7.png" alt="vinoBotella6">
+                <img src="images/VinoTienda7-removebg-preview.png" alt="vinoBotella6">
             </div>
             <div class="prod p8">
-                <img src="images/VinoTienda8.png" alt="vinoBotella7">
+                <img src="images/VinoTienda8-removebg-preview.png" alt="vinoBotella7">
             </div>
             <div class="prod p9">
-                <img src="images/VinoTienda9.png" alt="vinoBotella8">
+                <img src="images/VinoTienda9-removebg-preview.png" alt="vinoBotella8">
             </div>
             <div class="prod p10">
-                <img src="images/VinoTienda10.png" alt="vinoBotella9">
+                <img src="images/VinoTienda10-removebg-preview.png" alt="vinoBotella9">
             </div>
             <div class="prod p11">
-                <img src="images/VinoTienda11.png" alt="vinoBotella10">
+                <img src="images/VinoTienda11-removebg-preview.png" alt="vinoBotella10">
             </div>
-            <div class="prod p12">
-                <img src="images/VinoTienda12.png" alt="vinoBotella11">
-            </div>
+            <!-- <div class="prod p12">
+                <img src="images/VinoTienda9.png" alt="vinoBotella11">
+            </div> -->
         </section>
+
+        <!-- <div class="botonMas">
+            <p>Mas..</p>
+        </div> -->
+
     <hr>
         <section class="section-5">
-            <div class="envio">
-                <img src="images/LogoEnvio.png" alt="Envio"> <br>
+            <div class="box5">
+                <img src="images/LogoEnvio-removebg-preview.png" alt="Envio"> <br>
                 <span>Envio gratis a todo el pais</span>
             </div>
-            <div class="cuotas">
-                <img src="images/LogoCuotas.png" alt="Cuotas"> <br>
+            <div class="box5">
+                <img src="images/LogoCuotas-removebg-preview.png" alt="Cuotas"> <br>
                 <span>Ahora 12</span> <span>Ahora24</span> <span>Ahora36</span>
             </div>
-            <div class="sitioWeb">
-                <img src="images/LogoWebSegura.png" alt="SitioSeguro"> <br>
+            <div class="box5">
+                <img src="images/LogoWebSegura-removebg-preview.png" alt="SitioSeguro"> <br>
                 <span>Sitio Web 100% seguro</span>
             </div>
         </section>
     <hr>
-        <h2 id="noticias">NOTICIAS</h2>
+        <div class="cajaNoticias">
+            <h2 id="noticias">NOTICIAS</h2>
+        </div>
+        
         <section class="section-6">
             <div class="imgNoticia">
                 <img src="images/BarricaRobleFrances.png" alt="BarricaRobleFrances">
             </div>
             <div class="artiNoticia">
                 <article>
-                    La diferencia fundamental es que las barricas de roble francés se caracterizan por <span> <b> un grano más fino y provocar una oxigenación más lenta debido a que la microoxigenación es menor</b></span>. Esto significa que el vino necesita pasar más tiempo por la barrica
-                    <br>
-                    <input type="button">
+                    Una barrica de vino, también llamada tonel o cuba, es un <span><b>recipiente construido en madera donde se depositan los vinos para su crianza</b></span>. Las maderas más habituales para la construcción de barricas son las maderas de roble francés y roble americano, aunque también se pueden ver maderas como el roble español y el húngaro.
+                    El tinto roble es un vino joven, de añada. Es decir, <span><b>es un vino tinto que se ha conservado expresamente en una barrica de madera de roble por un tiempo limitado</b></span>. Normalmente, suele ser de 6 a 9 meses, aunque esta decisión dependerá de la receta de cada bodega.
+                    La diferencia fundamental es que las barricas de roble francés se caracterizan por <span> <b> un grano más fino y provocar una oxigenación más lenta debido a que la microoxigenación es menor</b></span>. Esto significa que el vino necesita pasar más tiempo por la barrica. De este modo, las barricas de roble francés aportan aromas más delicados y avainillados, como a miel, vainilla, especias dulces o frutos secos, mientras que las barricas de roble americano aportan aromas más exóticos como a coco, cacao o tabaco.
+                    <br><br>
+                    <!-- <input type="button" value="Quiero saber mas..." class="botonNoticia"> -->
                 </article>
             </div>
         </section>
+            <div class="cajaFormulario">
+            <h2 id="formulario">FORMULARIO</h2>
+            </div>
+            <div class="section-7">
+                
+                <form action="form" class="form" method="post">
+                    <input type="text" placeholder="Nombre (requerido)" required>
+                    <input type="email" placeholder="Email (requerido)" required>
+                    <input type="tel" placeholder="Teléfono">
+                    <textarea name="your-message"  placeholder="Mensaje (comentanos tu experiencia)"></textarea>
+                    
+                    <input type="reset" value="Limpiar" class="inputBoton">
+                    <input type="submit" value="Enviar" class="inputBoton">
+                </form>
+            </div>
+
+        <button class="button_arriba" id="arriba">
+            <i class="bi bi-arrow-up"></i>
+        </button>
+
+        <hr>
     </main>
 
     <footer>
-        <h2 id="formulario">FORMULARIO</h2>
-        <section class="section-7">
-            <div class="form">
-                <form action="">
-                <label for="">Nombre y Apellidos:</label>
-                <input type="text">
-                <br>
-                <label for="">Telefono:</label>
-                <input type="number">
-                <br>
-                <label for="">Email:</label>
-                <input type="email">
-                <br>
-                <label for="">Comentarios:</label>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-                <br>
-                <br>
-                <input type="reset">
-                <input type="submit">                
-                </form>
-            </div>
-        </section>
-        <hr>
         <section class="section-8">
             <div class="redes">
-                <div class="cajaWhatsapp">
-                    <img src="images/WathsappLogo.png" alt="whatsappLogo"><br>
-                    <a href="https://web.whatsapp.com/"><span>Whatsapp</span></a>
+                <div class="box8">
+                    <a href="https://web.whatsapp.com/"><i class="bi bi-whatsapp"></i></a>
                 </div>
-                <div class="cajaInstagram">
-                    <img src="images/InstagramLogo.png" alt="instagramLogo"><br>
-                    <a href="https://www.instagram.com/"><span>Instagram</span></a>
+                <div class="box8">
+                    <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></i></a>
                 </div>
-                <div class="cajaFacebook">
-                    <img src="images/FacebookLogo.png" alt="facebookLogo"><br>
-                    <a href="https://www.facebook.com/"><span>Facebook</span></a>
+                <div class="box8">
+                    <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
                 </div>
             </div>
-            <div class="logo">
-                <!-- Aqui Logo   -->
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13136.877445704962!2d-58.43356771855469!3d-34.598614157633506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1699931934291!5m2!1ses!2sar" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>    
                 <di class="contacto">
-                    <div class="telefono">
-                        <img src="images/LogoTelefono.png" alt="Telefono"><br>
-                        <span> 1157..9197</span>
+                    <div class="box8">
+                        <i class="bi bi-telephone"></i>
+                        <span> 1157449197</span>
                     </div>
-                    <div class="mail">
-                        <img src="images/LogoMail.png" alt="Mail"><br>
+                    <div class="box8">
+                        <i class="bi bi-envelope"></i>
                         <span>andresorbg@gmail.com</span>
                     </div>
-                    <div class="ubicacion">
-                        <img src="images/LogoUbicacion.png" alt="Ubicacion"><br>
+                    <div class="box8">
+                        <i class="bi bi-geo-alt"></i>
                         <span>C.A.B.A.</span>
                     </div>
                 </div>
             
         </section>
     </footer>
-    
+    <script src="scripts/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
